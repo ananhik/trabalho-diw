@@ -1,0 +1,338 @@
+/* BODY PARA TODAS AS PAGINAS  */
+body{
+    background: rgb(220, 180, 255)
+}
+/*------------------------------------------------PAGINA INDEX------------------------------------------------ */
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+.navbar{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(208, 155, 255);
+    color: black;
+}
+.btn{
+    background-color: rgb(185, 105, 255);
+    color: #fff;
+    border: rgb(179, 92, 255)
+}
+.btn:hover{
+    background-color: rgb(157, 49, 252);
+}
+/* ESTILIZAÇÃO DO CARROUSSEL */
+.carousel {
+    position: relative;
+    max-width: 700px; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+    overflow: hidden;
+  }
+
+ .carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-width: 2247px;
+  max-height: 1587px;
+}  
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px; 
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.carousel-indicators li.active {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+
+/* ESTILIZAÇÃO DOS CARDS */
+.product button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color:rgb(185, 105, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+.product button:hover {
+    background-color: rgb(157, 49, 252);
+    }
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product {
+    width: 200px;
+    border: 1px solid rgb(157, 49, 252);
+    padding: 10px;
+    margin: 10px; 
+    font-family: 'Poppins', sans-serif;
+    position: relative; 
+    border: 1px solid rgb(157, 49, 252);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+}
+.product h2{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-link {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color:rgb(185, 105, 255);
+    border: 1px solid rgb(171, 75, 255);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
+.page-link.active {
+    background-color: rgb(157, 49, 252)c;
+}
+
+.dropdown-menu-left {
+    left: auto;
+    right: 0;
+}
+/* -------------------------------------PAGINA DE DETALHES -------------------------------------*/
+.product-details {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.product-details img {
+    width: 200px;
+}
+
+.product-details h2 {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.product-details p {
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 576px) {
+    .product-details img {
+        width: 100%;
+    }
+}
+/* -----------------------------------------------PAGINA DE PESQUISA------------------------------- */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.search-container input {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    margin-bottom: 5px;
+}
+
+.product p {
+    margin-bottom: 5px;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+.pesquisar {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    }
+
+.search-input {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: rgb(205, 148, 255);
+    background-color: rgb(205, 148, 255);
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    }
+
+.search-input:focus {
+    color: #fff;
+    border: rgb(179, 92, 255)
+    }
+
+.search-button {
+    padding: 5px 20px;
+    font-size: 16px;
+    background-color: rgb(185, 105, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    }
+
+.search-button:hover {
+    background-color: rgb(157, 49, 252);
+    }
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.btn-pagination {
+    background-color:rgb(185, 105, 255);
+    border-color: rgb(173, 78, 255);
+    color: #fff;
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+.btn-pagination:hover {
+    background-color:rgb(157, 49, 252);
+    border-color:rgb(148, 26, 255);
+    }
+
+.btn-pagination:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    cursor: not-allowed;
+    }
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    }
+/* RODAPÉ DE TODAS AS PAGINAS-----------------------------------------------------------------*/
+.rodape{
+    /* background: rgb(208, 155, 255) */
+    background: linear-gradient(72deg,rgb(208, 155, 255) 1%,rgb(184, 103, 255));
+}
+.rodapecopy{
+    background: linear-gradient(72deg,rgb(208, 155, 255) 1%,rgb(184, 103, 255));
+}
+.footer-social-container {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+.nav-link.icones {
+    color: rgb(9, 9, 9);
+    }
+
+.textoRodape{
+    font-family: 'Poppins', sans-serif;
+}
+.tituloRodape{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>AltExpress - Detalhes Produtos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: black;">E-commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pesquisa.html" style="color: black;">Pesquisar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <!-- dados da descrição  -->
+    <div class="container">
+        <div class="product-details">
+            <img id="product-image" src="" alt="Product Image">
+            <h2 id="product-title"></h2>
+            <p id="product-description"></p>
+            <p><strong>Composição:</strong></p>
+            <p id="product-composition"></p>
+            <p><strong>Estação:</strong></p>
+            <p id="product-season"></p>
+            <p><strong>Color:</strong></p>
+            <p id="product-color"></p>
+            <p><strong>Brand:</strong></p>
+            <p id="product-brand"></p>
+            <p><strong>Usage:</strong></p>
+            <p id="product-usage"></p>
+            <p><strong>Article Number:</strong></p>
+            <p id="product-article-number"></p>
+            <p><strong>Base Colour:</strong></p>
+            <p id="product-base-colour"></p>
+            <p><strong>Year:</strong></p>
+            <p id="product-year"></p>
+            <p><strong>Article Type:</strong></p>
+            <p id="product-article-type"></p>
+            <p><strong>Display Categories:</strong></p>
+            <p id="product-display-categories"></p>
+            <p><strong>Category:</strong></p>
+            <p id="product-category"></p>
+            <p><strong>Rating:</strong></p>
+            <p id="product-rating"></p>
+            <p id="product-price"></p>
+        </div>
+    </div>
+    <!-- RODAPÉ DA PAGINA -->
+    <footer class="rodape text-dark site-footer">
+        <div class="container-fluid py-5.5">
+          <div class="row">
+            <div class="col-12 col-md-4">
+          <!-- parte contato e afins -->
+              <h5 class="tituloRodape">Contato</h5>
+              <ul class="list-unstyled textoRodape">
+                <a style="font-weight: bold;">Telefone:</a><a> (31) 3374-1620</a><br>
+                <a style="font-weight: bold;">Email:</a><a> contato@altexpress.com.br</a><br>
+                <a style="font-weight: bold;">Endereço:</a><a> Rua das Oliveiras, 123 - Belo Horizonte/MG</a><br>
+                <a style="font-weight: bold;">Horário de funcionamento:</a><a> De segunda a sexta, das 9h às 18h</a><br>
+                <a style="font-weight: bold;">Formas de pagamento: </a><a> Cartão de crédito, débito, dinheiro e pix</a>
+              </ul>
+            </div>
+          <!-- parte redes sociais  -->
+            <div class="col-12 col-md-4">
+              <h5 class="tituloRodape">Redes Sociais</h5>
+              <div class="footer-social-container">
+                <a class="nav-link icones textoRodape" href="https://www.facebook.com/"><i class="fab fa-facebook fa-3x"></i>     Facebook/facebook.com</a>
+                <a class="nav-link icones textoRodape" href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i>   Instagram/instagram.com</a>
+                <a class="nav-link icones textoRodape" href="https://api.whatsapp.com/send?phone=5531999999999"><i class="fab fa-whatsapp fa-3x"></i>      WhatsApp/whatsapp.com</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+          <!-- parte newsletter -->
+        <h5 class="tituloRodape">Newsletter</h5>
+              <p class="textoRodape">Cadastre-se em nossa newsletter e receba promoções e novidades por e-mail:</p>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" style="background:rgb(185, 105, 255)" type="search" placeholder="Insira seu e-mail aqui" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit" style="background:rgb(219, 177, 255)">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+          <!-- parte copyright -->
+        <div class="rodapecopy text-center py-3">
+          <p class="textoRodape">&copy; 2023 All 4 Sports. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    <script src="js/product-details.js"></script>
+</body>
+</html>
